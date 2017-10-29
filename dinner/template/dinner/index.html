@@ -1,0 +1,9 @@
+{% if ingredients %}
+    <select>
+    {% for ingredient in ingredients %}
+        <option value="{{ingredient.id}}">{{ ingredient.name }}</option>
+    {% endfor %}
+    </select>
+{% else %}
+    <p>No ingredients are available.</p>
+{% endif %}
